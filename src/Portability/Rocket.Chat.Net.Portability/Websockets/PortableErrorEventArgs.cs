@@ -1,6 +1,7 @@
+using System;
+
 namespace Rocket.Chat.Net.Portability.Websockets
 {
-    using System;
 
     public class PortableErrorEventArgs
     {

@@ -44,8 +44,7 @@
             request.AddQueryParameter("api_key", GiphyApiKey);
 
             var response = _client.Execute<dynamic>(request);
-
-            var url = response.Data["data"]["images"]["fixed_height"]["url"];
+            var url = "";// response.Data.Data["data"]["images"]["fixed_height"]["url"];
 
             return url;
         }
