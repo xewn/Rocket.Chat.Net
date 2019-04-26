@@ -11,9 +11,9 @@
     {
         public async Task Run()
         {
-            const string username = "m@silvenga.com";
-            const string password = "silverlight";
-            const string rocketServerUrl = "demo.rocket.chat:3000";
+            const string username = "wsl";
+            const string password = "abc123!@#";
+            const string rocketServerUrl = "192.168.31.137:8818"; // just the host and port
             const bool useSsl = false;
 
             ILoginOption loginOption = new LdapLoginOption

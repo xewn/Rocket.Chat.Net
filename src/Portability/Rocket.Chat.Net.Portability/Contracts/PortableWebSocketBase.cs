@@ -1,8 +1,9 @@
-﻿using System;
-using Rocket.Chat.Net.Portability.Websockets;
-
-namespace Rocket.Chat.Net.Portability.Contracts
+﻿namespace Rocket.Chat.Net.Portability.Contracts
 {
+    using System;
+
+    using Rocket.Chat.Net.Portability.Websockets;
+
     public abstract class PortableWebSocketBase
     {
         public PortableWebSocketBase(string url)

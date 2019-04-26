@@ -19,9 +19,9 @@
 
         private static async Task MainAsync()
         {
-            const string username = "m@silvenga.com";
-            const string password = "silverlight";
-            const string rocketServerUrl = "dev0:3000"; // just the host and port
+            const string username = "a@qq.com";
+            const string password = "abc123!@#";
+            const string rocketServerUrl = "192.168.31.137:8818"; // just the host and port
             const bool useSsl = false; // Basically use ws or wss.
             
             // Create the bot - an abstraction of the driver

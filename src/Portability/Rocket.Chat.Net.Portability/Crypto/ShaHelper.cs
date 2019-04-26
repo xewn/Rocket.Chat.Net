@@ -1,8 +1,8 @@
-﻿using System;
-using Rocket.Chat.Net.Portability.Contracts;
-
-namespace Rocket.Chat.Net.Portability.Crypto
+﻿namespace Rocket.Chat.Net.Portability.Crypto
 {
+    using System;
+
+    using Rocket.Chat.Net.Portability.Contracts;
 
     public class ShaHelper : ShaHelperBase
     {
