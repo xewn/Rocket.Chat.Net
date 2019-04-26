@@ -11,7 +11,7 @@
     {
         public async Task Run()
         {
-            const string username = "wsl";
+            const string username = "a@qq.com";
             const string password = "abc123!@#";
             const string rocketServerUrl = "192.168.31.137:8818"; // just the host and port
             const bool useSsl = false;
@@ -28,7 +28,7 @@
             await driver.LoginAsync(loginOption); // Login via LDAP
             await driver.SubscribeToRoomAsync(); // Listen on all rooms
 
-            driver.MessageReceived += Console.WriteLine;
+            driver.MessageReceived += MesReceived;
 
             var generalRoomIdResult = await driver.GetRoomIdAsync("general");
             if (generalRoomIdResult.HasError)
@@ -38,6 +38,10 @@
 
             var generalRoomId = generalRoomIdResult.Result;
             await driver.SendMessageAsync("message", generalRoomId);
+        }
+        private void MesReceived(object info)
+        {
+            Console.WriteLine(info);
         }
     }
 }

@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DriverExample.cs" />
+    <Compile Include="GiphyExample.cs" />
     <Compile Include="GiphyResponse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
